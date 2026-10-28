@@ -1,0 +1,8 @@
+qemu-system-x86_64 \
+	-accel tcg -M q35 -cpu max -smp 1 -m 128M \
+	-hda usr/bin/disk.img \
+	-display gtk -vga std \
+	-no-reboot -no-shutdown
+
+#	-d int,cpu_reset,guest_errors -D var/log/qemu.log \
+
