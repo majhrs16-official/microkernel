@@ -1,3 +1,7 @@
-usr/bin/disk.img
+usr/bin/*
 var/log/*
 tmp/*
+
+!usr/bin/.gitkeep
+!var/log/.gitkeep
+!tmp/.gitkeep

@@ -2,5 +2,5 @@ for fname in $(cat etc/header.txt); do
 	cat usr/src/$fname.asm
 done > tmp/code.asm
 
-rm usr/bin/disk.img
+rm usr/bin/disk.img 2>/dev/null
 nasm -O0 -f bin -o usr/bin/disk.img tmp/code.asm && fallocate -l 1M usr/bin/disk.img
